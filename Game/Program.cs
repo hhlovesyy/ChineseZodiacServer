@@ -8,7 +8,7 @@ namespace Game
         {
             if (!DbManager.Connect("game", "127.0.0.1", 3306, "root", "jdjjc552422"))
             {
-                Console.WriteLine("pangpangai");
+                Console.WriteLine("pangpangaiiiiii");
                 return;
             }
 
