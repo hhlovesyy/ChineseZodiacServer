@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zHIAm09/dBfRJJPGPPThCmm2UgdPKjfGeHWBoCPmBsYo+XxjtDV1pm7gKdTFqdtTpXIj6pcdunvUsTz3d5JiOQ==",
+  "dgSpecHash": "Sepy8w3be7uz6Q5UuabC0R/U8rvCnfTAlotP4orPNh5TuEh4NUSdGwNe54lv8l3A2tyGpD8o4qvOpfRxd16ZkA==",
   "success": true,
-  "projectFilePath": "E:\\大三下学期\\网络游戏设计\\finalProject\\server\\Game\\Game\\Game.csproj",
+  "projectFilePath": "E:\\大三下学期\\网络游戏设计\\finalProject\\server\\temp\\Game\\Game.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\15969\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\15969\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",

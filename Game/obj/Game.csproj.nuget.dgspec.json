@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\大三下学期\\网络游戏设计\\finalProject\\server\\Game\\Game\\Game.csproj": {}
+    "E:\\大三下学期\\网络游戏设计\\finalProject\\server\\temp\\Game\\Game.csproj": {}
   },
   "projects": {
-    "E:\\大三下学期\\网络游戏设计\\finalProject\\server\\Game\\Game\\Game.csproj": {
+    "E:\\大三下学期\\网络游戏设计\\finalProject\\server\\temp\\Game\\Game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\大三下学期\\网络游戏设计\\finalProject\\server\\Game\\Game\\Game.csproj",
+        "projectUniqueName": "E:\\大三下学期\\网络游戏设计\\finalProject\\server\\temp\\Game\\Game.csproj",
         "projectName": "Game",
-        "projectPath": "E:\\大三下学期\\网络游戏设计\\finalProject\\server\\Game\\Game\\Game.csproj",
+        "projectPath": "E:\\大三下学期\\网络游戏设计\\finalProject\\server\\temp\\Game\\Game.csproj",
         "packagesPath": "C:\\Users\\15969\\.nuget\\packages\\",
-        "outputPath": "E:\\大三下学期\\网络游戏设计\\finalProject\\server\\Game\\Game\\obj\\",
+        "outputPath": "E:\\大三下学期\\网络游戏设计\\finalProject\\server\\temp\\Game\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
