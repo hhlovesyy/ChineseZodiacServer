@@ -1,0 +1,11 @@
+E:\大三下\网络游戏设计\大作业\dotnetCoreServer\Game\Game\bin\Release\netcoreapp2.1\Game.deps.json
+E:\大三下\网络游戏设计\大作业\dotnetCoreServer\Game\Game\bin\Release\netcoreapp2.1\Game.runtimeconfig.json
+E:\大三下\网络游戏设计\大作业\dotnetCoreServer\Game\Game\bin\Release\netcoreapp2.1\Game.runtimeconfig.dev.json
+E:\大三下\网络游戏设计\大作业\dotnetCoreServer\Game\Game\bin\Release\netcoreapp2.1\Game.dll
+E:\大三下\网络游戏设计\大作业\dotnetCoreServer\Game\Game\bin\Release\netcoreapp2.1\Game.pdb
+E:\大三下\网络游戏设计\大作业\dotnetCoreServer\Game\Game\obj\Release\netcoreapp2.1\Game.csproj.CoreCompileInputs.cache
+E:\大三下\网络游戏设计\大作业\dotnetCoreServer\Game\Game\obj\Release\netcoreapp2.1\Game.AssemblyInfoInputs.cache
+E:\大三下\网络游戏设计\大作业\dotnetCoreServer\Game\Game\obj\Release\netcoreapp2.1\Game.AssemblyInfo.cs
+E:\大三下\网络游戏设计\大作业\dotnetCoreServer\Game\Game\obj\Release\netcoreapp2.1\Game.dll
+E:\大三下\网络游戏设计\大作业\dotnetCoreServer\Game\Game\obj\Release\netcoreapp2.1\Game.pdb
+E:\大三下\网络游戏设计\大作业\dotnetCoreServer\Game\Game\obj\Release\netcoreapp2.1\Game.csprojAssemblyReference.cache
