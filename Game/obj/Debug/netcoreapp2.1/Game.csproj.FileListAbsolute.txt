@@ -22,3 +22,16 @@ E:\大三下学期\网络游戏设计\finalProject\server\Game\Game\obj\Debug\ne
 E:\大三下学期\网络游戏设计\finalProject\server\Game\Game\obj\Debug\netcoreapp2.1\Game.csproj.AssemblyReference.cache
 E:\大三下学期\网络游戏设计\finalProject\server\Game\Game\obj\Debug\netcoreapp2.1\Game.GeneratedMSBuildEditorConfig.editorconfig
 E:\大三下学期\网络游戏设计\finalProject\server\Game\Game\obj\Debug\netcoreapp2.1\Game.genruntimeconfig.cache
+D:\asoftware\GIT\gitcsharp\Game\bin\Debug\netcoreapp2.1\Game.deps.json
+D:\asoftware\GIT\gitcsharp\Game\bin\Debug\netcoreapp2.1\Game.runtimeconfig.json
+D:\asoftware\GIT\gitcsharp\Game\bin\Debug\netcoreapp2.1\Game.runtimeconfig.dev.json
+D:\asoftware\GIT\gitcsharp\Game\bin\Debug\netcoreapp2.1\Game.dll
+D:\asoftware\GIT\gitcsharp\Game\bin\Debug\netcoreapp2.1\Game.pdb
+D:\asoftware\GIT\gitcsharp\Game\obj\Debug\netcoreapp2.1\Game.csproj.AssemblyReference.cache
+D:\asoftware\GIT\gitcsharp\Game\obj\Debug\netcoreapp2.1\Game.GeneratedMSBuildEditorConfig.editorconfig
+D:\asoftware\GIT\gitcsharp\Game\obj\Debug\netcoreapp2.1\Game.AssemblyInfoInputs.cache
+D:\asoftware\GIT\gitcsharp\Game\obj\Debug\netcoreapp2.1\Game.AssemblyInfo.cs
+D:\asoftware\GIT\gitcsharp\Game\obj\Debug\netcoreapp2.1\Game.csproj.CoreCompileInputs.cache
+D:\asoftware\GIT\gitcsharp\Game\obj\Debug\netcoreapp2.1\Game.dll
+D:\asoftware\GIT\gitcsharp\Game\obj\Debug\netcoreapp2.1\Game.pdb
+D:\asoftware\GIT\gitcsharp\Game\obj\Debug\netcoreapp2.1\Game.genruntimeconfig.cache
