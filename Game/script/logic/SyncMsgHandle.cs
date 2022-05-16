@@ -112,6 +112,38 @@ public partial class MsgHandler {
 		room.Broadcast(msg);
 	}
 
+	public static void MsgKey(ClientState c, MsgBase msgBase)
+	{
+		MsgKey msg = (MsgKey)msgBase;
+		Player player = c.player;
+		if (player == null) return;
+		
+		//room
+		Room room = RoomManager.GetRoom(player.roomId);
+		if (room == null)
+		{
+			return;
+		}
+		//status
+		if (room.status != Room.Status.FIGHT)
+		{
+			return;
+		}
+		//发送者校验
+		//if (player.id != msg.id)
+		//{
+		//	return;
+		//}
+		//状态
+		
+		//广播
+		msg.id = player.id;
+		
+		room.Broadcast(msg);
+	}
+
+
+
 }
 
 

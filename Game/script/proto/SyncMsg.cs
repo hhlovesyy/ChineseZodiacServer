@@ -12,7 +12,14 @@ public class MsgSyncAnimal:MsgBase {
 	//服务端补充
 	public string id = "";		//哪个玩家
 }
+//同步钥匙信息：谁拿到了钥匙
+public class MsgKey : MsgBase
+{
+	public MsgKey() { protoName = "MsgKey"; }
 
+	//服务端补充
+	public string id = "";      //哪个动物
+}
 //开火
 public class MsgFire:MsgBase {
 	public MsgFire() {protoName = "MsgFire";}
