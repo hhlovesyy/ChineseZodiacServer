@@ -336,57 +336,104 @@ public class Room {
 
 
 	//定时更新
-	public void Update(){
-		//状态判断
-		if(status != Status.FIGHT){
-			return;
-		}
-		//时间判断
-		if(NetManager.GetTimeStamp() - lastjudgeTime < 10f){
-			return;
-		}
-		lastjudgeTime = NetManager.GetTimeStamp();
-		//胜负判断
-		int winCamp = Judgment();
-		//尚未分出胜负
-		if(winCamp == 0){
-			return;
-		}
-		//某一方胜利，结束战斗
-		status = Status.PREPARE;
-		//统计信息
-		foreach(string id in playerIds.Keys) {
-			Player player = PlayerManager.GetPlayer(id);
-			if(player.camp == winCamp){player.data.win++;}
-			else{player.data.lost++;}
-		}
-		//发送Result
-		MsgBattleResult msg = new MsgBattleResult();
-		msg.winCamp = winCamp;
-		Broadcast(msg);
-	}
+	//public void Update(){
+	//	//状态判断
+	//	if(status != Status.FIGHT){
+	//		return;
+	//	}
+	//	//时间判断
+	//	if(NetManager.GetTimeStamp() - lastjudgeTime < 10f){
+	//		return;
+	//	}
+	//	lastjudgeTime = NetManager.GetTimeStamp();
+	//	//胜负判断
+	//	int winCamp = Judgment();
+	//	//尚未分出胜负
+	//	if(winCamp == 0){
+	//		return;
+	//	}
+	//	//某一方胜利，结束战斗
+	//	status = Status.PREPARE;
+	//	//统计信息
+	//	foreach(string id in playerIds.Keys) {
+	//		Player player = PlayerManager.GetPlayer(id);
+	//		if(player.camp == winCamp){player.data.win++;}
+	//		else{player.data.lost++;}
+	//	}
+	//	//发送Result
+	//	MsgBattleResult msg = new MsgBattleResult();
+	//	msg.winCamp = winCamp;
+	//	Broadcast(msg);
+	//}
 
 	//胜负判断
 	public int Judgment(){
 		//存活人数
 		int count1 = 0;
-		int count2 = 0;
+		int wincamp=0;
+		//int count2 = 0;
 		foreach(string id in playerIds.Keys) {
 			Player player = PlayerManager.GetPlayer(id);
 			if(!IsDie(player)){
-				if(player.camp == 1){count1++;};
-				if(player.camp == 2){count2++;};
+				//if(player.camp == 1){count1++;};
+				//if(player.camp == 2){count2++;};
+				count1++;
+				wincamp = player.camp;
 			}
 		}
-		//判断
-		if(count1 <= 0){
-			return 2;
-		}
-		else if(count2 <= 0){
-			return 1;
-		}
-		return 0;
+        if (count1 == 1)
+        {
+            return wincamp;
+        }
+        ////判断
+        //if(count1 <= 0){
+        //	return 2;
+        //}
+        //else if(count2 <= 0){
+        //	return 1;
+        //}
+        return 0;
 	}
+	public void MakeOtherAnimalsLost(string winid)//当其中一个人拿到钥匙的时候其他人输了
+	{
+		
+		foreach (string id in playerIds.Keys)
+		{
+			if(id!=winid)
+            {
+				Player player = PlayerManager.GetPlayer(id);
+				player.hp = -1;
+			}
+		}
 
+		return;
+	}
+	public void OneWin(string winid)
+    {
+		//状态判断
+		if (status != Status.FIGHT)
+		{
+			return;
+		}
+
+		//某一方胜利，结束战斗
+		//status = Status.PREPARE;
+		status = Status.PREPARE;
+
+		//统计信息
+		foreach (string id in playerIds.Keys)
+		{
+			Player player = PlayerManager.GetPlayer(id);
+			//if (player.camp == winCamp) 
+			if (player.id == winid)
+			{ player.data.win++; }
+			else { player.data.lost++; }
+		}
+		//发送Result
+		MsgBattleResult msg = new MsgBattleResult();
+		//msg.winCamp = winCamp;
+		msg.winId = winid;
+		Broadcast(msg);
+	}
 }
 

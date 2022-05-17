@@ -53,9 +53,9 @@ public class RoomManager
 
 	//Update
 	public static void Update(){
-		foreach(Room room in rooms.Values){
-			room.Update();
-		}
+		//foreach(Room room in rooms.Values){
+		//	//room.Update();
+		//}
 	}
 }
 
