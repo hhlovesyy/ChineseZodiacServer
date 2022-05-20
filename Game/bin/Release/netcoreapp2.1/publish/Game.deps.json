@@ -1,11 +1,11 @@
 {
   "runtimeTarget": {
-    "name": ".NETCoreApp,Version=v3.1",
-    "signature": "198f6965f3a6b1c388cd12419c16c3d65034a607"
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": ""
   },
   "compilationOptions": {},
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
+    ".NETCoreApp,Version=v2.1": {
       "Game/1.0.0": {
         "dependencies": {
           "MySql.Data": "8.0.29",
