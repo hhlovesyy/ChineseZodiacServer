@@ -15,7 +15,7 @@ public class Room {
 	//物品道具生成数
 	public int itemNum=200;
 	//道具生成种类
-	public int itemKind = 3;
+	public int itemKind = 4;
 
 	public enum Status {
 		PREPARE = 0,

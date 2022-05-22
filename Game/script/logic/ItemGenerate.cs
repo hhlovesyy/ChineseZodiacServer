@@ -37,6 +37,7 @@ public class Item
         kind = 4;//目前4表示钥匙,后续有需求再进行更新
     }
 }
+
 public class ItemGenerate
 {
     //[Header("地图范围")]
@@ -105,10 +106,13 @@ public class ItemGenerate
         {
             RandomSingleBoxSpawn();
         }
+        int keyId = this._random.Next(1, boxNum);
+        items[keyId].kind = 4;// 暂时设定key的Id是4,用于生成key
+        Console.WriteLine("the key's id is" + keyId);
     }
     public int GetRandomInt(int minNum, int maxNum)
     {
-        return this._random.Next(minNum, maxNum);
+        return this._random.Next(minNum, maxNum); //该整数大于或等于minNum且小于maxNum
     }
     //创建生成物体的方法  
     private void RandomSingleBoxSpawn()
@@ -121,20 +125,20 @@ public class ItemGenerate
         z = GetRandomInt(minZ, maxZ);
         curBoxNum++;
 
-        if (!hasKey)
-        {
-            // 有10%的概率生成钥匙
-            int r = this._random.Next(0, 10);
-            if (r == 5)
-            {
-                hasKey = true;
-                Item keyItem = new Item(curBoxNum, x, z);
-                items.Add(keyItem);
-                totalBoxNum++;
-                Console.WriteLine("haskey1!!!");
-                return;
-            }
-        }
+        //if (!hasKey)
+        //{
+        //    // 有10%的概率生成钥匙
+        //    int r = this._random.Next(0, 10);
+        //    if (r == 5)
+        //    {
+        //        hasKey = true;
+        //        Item keyItem = new Item(curBoxNum, x, z);
+        //        items.Add(keyItem);
+        //        totalBoxNum++;
+        //        Console.WriteLine("haskey1!!!");
+        //        return;
+        //    }
+        //}
 
         // 显示在场景中 
         //guessBox = Instantiate(guessBoxPrefab, new Vector3(x, 10f, z), Quaternion.identity);
