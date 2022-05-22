@@ -139,7 +139,7 @@ class NetManager
 		//分发消息
 		MethodInfo mi =  typeof(MsgHandler).GetMethod(protoName);
 		object[] o = {state, msgBase};
-		Console.WriteLine("Receive " + protoName);
+		//Console.WriteLine("Receive " + protoName);
 		if(mi != null){
 			mi.Invoke(null, o);
 		}

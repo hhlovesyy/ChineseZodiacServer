@@ -11,6 +11,12 @@ public class Room {
 	//房主id
 	public string ownerId = "";
 	//状态
+
+	//物品道具生成数
+	public int itemNum=200;
+	//道具生成种类
+	public int itemKind = 4;
+
 	public enum Status {
 		PREPARE = 0,
 		FIGHT = 1 ,
@@ -21,7 +27,7 @@ public class Room {
     static float[,,] birthConfig = new float[5, 3, 6] {
 		//阵营1出生点
 		{
-            {20.48343f, 34.061752f,2.543324f, 0f,0f,0f},//出生点1
+            {20.48343f, 54.061752f,2.543324f, 0f,0f,0f},//出生点1
 			{-49.9f, 3.8f, -61.4f, 0, 21.4f, 0f},//出生点2
 			{-6.2f,  3.8f, -70.7f, 0, 21.9f, 0f},//出生点3
 		},
@@ -222,11 +228,12 @@ public class Room {
 			if(player.camp == 1){ count1++; }
 			else { count2++; }
 		}
-		//每个队伍至少要有1名玩家
-		if (count1 < 1 || count2 < 1){
-			return false;
-		}
-		return true;
+        //每个队伍至少要有1名玩家
+        if (count1 < 1 || count2 < 1)
+        {
+            return false;
+        }
+        return true;
 	}
 
 	//初始化位置
@@ -240,6 +247,19 @@ public class Room {
 		player.ey = birthConfig[camp-1, index,4];
 		player.ez = birthConfig[camp-1, index,5];
 	}
+
+	//物品信息转为ItemInfo
+	public ItemInfo ItemToItemInfo(Item item)
+    {
+		ItemInfo itemInfo=new ItemInfo();
+		itemInfo.id=item.id;
+		itemInfo.x=item.x;
+		itemInfo.y=item.y;
+		itemInfo.z=item.z;
+		itemInfo.kind=item.kind;
+		return itemInfo;
+    }
+
 
 	//玩家数据转成AnimalInfo
 	public AnimalInfo PlayerToAnimalInfo(Player player){
@@ -303,6 +323,16 @@ public class Room {
             player.hp = 100;
         }
     }
+	/*
+	 * 下面这个函数用来重置所有的物体和钥匙,发送给客户端
+	 */
+	private void ResetItems()
+    {
+		//这里会重置所有的物品属性,并打包发送给客户端
+		ItemGenerate items = new ItemGenerate(id,itemNum,itemKind);
+		items.Start();
+
+    }
 
     //开战
     public bool StartBattle() {
@@ -313,11 +343,26 @@ public class Room {
 		status = Status.FIGHT;
 		//玩家战斗属性
 		ResetPlayers();
+
+		//2022.05.18
+		ItemGenerate itemGenerator = new ItemGenerate(id, itemNum, itemKind);
+		itemGenerator.Start();
+
 		//返回数据
 		MsgEnterBattle msg = new MsgEnterBattle();
 		msg.mapId = 1;
 		msg.animals = new AnimalInfo[playerIds.Count];
+		//0519
 
+		msg.items = new ItemInfo[itemNum];
+		int j = 0;
+		foreach(Item item in itemGenerator.items)
+        {
+			msg.items[j] = ItemToItemInfo(item);
+			j++;
+        }
+
+		//0519结束
 		int i=0;
 		foreach(string id in playerIds.Keys) {
 			Player player = PlayerManager.GetPlayer(id);

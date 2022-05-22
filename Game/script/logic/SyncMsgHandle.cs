@@ -144,7 +144,17 @@ public partial class MsgHandler {
 		
 	}
 
+	//同步拾取物体信息
+	public static void MsgPickup(ClientState c, MsgBase msgBase)
+    {
+		MsgPickup msg = (MsgPickup)msgBase;
+		Player player = c.player;
+		if (player == null) return;
 
+		//room
+		Room room = RoomManager.GetRoom(player.roomId);
+		room.Broadcast(msg);
+	}
 
 }
 

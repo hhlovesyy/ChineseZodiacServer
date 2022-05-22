@@ -48,3 +48,16 @@ E:\大三下学期\网络游戏设计\finalProject\servernew0517\Game\obj\Debug\
 E:\大三下学期\网络游戏设计\finalProject\servernew0517\Game\obj\Debug\netcoreapp2.1\Game.dll
 E:\大三下学期\网络游戏设计\finalProject\servernew0517\Game\obj\Debug\netcoreapp2.1\Game.pdb
 E:\大三下学期\网络游戏设计\finalProject\servernew0517\Game\obj\Debug\netcoreapp2.1\Game.genruntimeconfig.cache
+D:\unity\NewChineseZodiacServer\Game\bin\Debug\netcoreapp2.1\Game.deps.json
+D:\unity\NewChineseZodiacServer\Game\bin\Debug\netcoreapp2.1\Game.runtimeconfig.json
+D:\unity\NewChineseZodiacServer\Game\bin\Debug\netcoreapp2.1\Game.runtimeconfig.dev.json
+D:\unity\NewChineseZodiacServer\Game\bin\Debug\netcoreapp2.1\Game.dll
+D:\unity\NewChineseZodiacServer\Game\bin\Debug\netcoreapp2.1\Game.pdb
+D:\unity\NewChineseZodiacServer\Game\obj\Debug\netcoreapp2.1\Game.csproj.AssemblyReference.cache
+D:\unity\NewChineseZodiacServer\Game\obj\Debug\netcoreapp2.1\Game.GeneratedMSBuildEditorConfig.editorconfig
+D:\unity\NewChineseZodiacServer\Game\obj\Debug\netcoreapp2.1\Game.AssemblyInfoInputs.cache
+D:\unity\NewChineseZodiacServer\Game\obj\Debug\netcoreapp2.1\Game.AssemblyInfo.cs
+D:\unity\NewChineseZodiacServer\Game\obj\Debug\netcoreapp2.1\Game.csproj.CoreCompileInputs.cache
+D:\unity\NewChineseZodiacServer\Game\obj\Debug\netcoreapp2.1\Game.dll
+D:\unity\NewChineseZodiacServer\Game\obj\Debug\netcoreapp2.1\Game.pdb
+D:\unity\NewChineseZodiacServer\Game\obj\Debug\netcoreapp2.1\Game.genruntimeconfig.cache
