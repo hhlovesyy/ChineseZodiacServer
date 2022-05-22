@@ -61,3 +61,16 @@ D:\unity\NewChineseZodiacServer\Game\obj\Debug\netcoreapp2.1\Game.csproj.CoreCom
 D:\unity\NewChineseZodiacServer\Game\obj\Debug\netcoreapp2.1\Game.dll
 D:\unity\NewChineseZodiacServer\Game\obj\Debug\netcoreapp2.1\Game.pdb
 D:\unity\NewChineseZodiacServer\Game\obj\Debug\netcoreapp2.1\Game.genruntimeconfig.cache
+D:\unity\AllChineseZodiac\chinesezodiacserver\Game\bin\Debug\netcoreapp2.1\Game.deps.json
+D:\unity\AllChineseZodiac\chinesezodiacserver\Game\bin\Debug\netcoreapp2.1\Game.runtimeconfig.json
+D:\unity\AllChineseZodiac\chinesezodiacserver\Game\bin\Debug\netcoreapp2.1\Game.runtimeconfig.dev.json
+D:\unity\AllChineseZodiac\chinesezodiacserver\Game\bin\Debug\netcoreapp2.1\Game.dll
+D:\unity\AllChineseZodiac\chinesezodiacserver\Game\bin\Debug\netcoreapp2.1\Game.pdb
+D:\unity\AllChineseZodiac\chinesezodiacserver\Game\obj\Debug\netcoreapp2.1\Game.csproj.AssemblyReference.cache
+D:\unity\AllChineseZodiac\chinesezodiacserver\Game\obj\Debug\netcoreapp2.1\Game.GeneratedMSBuildEditorConfig.editorconfig
+D:\unity\AllChineseZodiac\chinesezodiacserver\Game\obj\Debug\netcoreapp2.1\Game.AssemblyInfoInputs.cache
+D:\unity\AllChineseZodiac\chinesezodiacserver\Game\obj\Debug\netcoreapp2.1\Game.AssemblyInfo.cs
+D:\unity\AllChineseZodiac\chinesezodiacserver\Game\obj\Debug\netcoreapp2.1\Game.csproj.CoreCompileInputs.cache
+D:\unity\AllChineseZodiac\chinesezodiacserver\Game\obj\Debug\netcoreapp2.1\Game.dll
+D:\unity\AllChineseZodiac\chinesezodiacserver\Game\obj\Debug\netcoreapp2.1\Game.pdb
+D:\unity\AllChineseZodiac\chinesezodiacserver\Game\obj\Debug\netcoreapp2.1\Game.genruntimeconfig.cache

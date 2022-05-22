@@ -1398,23 +1398,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\15969\\.nuget\\packages\\": {},
+    "C:\\Users\\Lenovo\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\大三下学期\\网络游戏设计\\finalProject\\servernew0517\\Game\\Game.csproj",
+      "projectUniqueName": "D:\\unity\\AllChineseZodiac\\chinesezodiacserver\\Game\\Game.csproj",
       "projectName": "Game",
-      "projectPath": "E:\\大三下学期\\网络游戏设计\\finalProject\\servernew0517\\Game\\Game.csproj",
-      "packagesPath": "C:\\Users\\15969\\.nuget\\packages\\",
-      "outputPath": "E:\\大三下学期\\网络游戏设计\\finalProject\\servernew0517\\Game\\obj\\",
+      "projectPath": "D:\\unity\\AllChineseZodiac\\chinesezodiacserver\\Game\\Game.csproj",
+      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+      "outputPath": "D:\\unity\\AllChineseZodiac\\chinesezodiacserver\\Game\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\15969\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1465,7 +1465,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

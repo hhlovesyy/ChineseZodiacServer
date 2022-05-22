@@ -139,7 +139,9 @@ public partial class MsgHandler {
 		//广播
 		msg.id = player.id;
 		room.Broadcast(msg);
-		room.OneWin(msg.id);
+		//假设获胜了 但是其实没有
+		//room.OneWin(msg.id);
+
 		//room.MakeOtherAnimalsLost(msg.id);
 		
 	}

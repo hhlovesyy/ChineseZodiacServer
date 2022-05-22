@@ -1,12 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Game",
-    "\\Game\\script",
-    "\\Game\\script\\db",
-    "\\Game\\script\\logic",
-    "\\Game\\script\\net",
-    "\\Game\\script\\proto"
+    ""
   ],
+  "SelectedNode": "\\Game.sln",
   "PreviewInSolutionExplorer": false
 }
