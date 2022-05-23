@@ -18,7 +18,12 @@ public class Item
         int maxNum = itemKind;
         //随机数对象
         Random _random=new Random();
-        return _random.Next(minNum, maxNum);
+        int kind= _random.Next(minNum, maxNum);
+        while(kind==4)  //不能生成kind=4的钥匙,后面再指定
+        {
+            kind = _random.Next(minNum, maxNum);
+        }
+        return kind;
     }
     public Item(int id,float x,float z,int itemKind)
     {
@@ -41,10 +46,10 @@ public class Item
 public class ItemGenerate
 {
     //[Header("地图范围")]
-    public int minX = -27;
-    public int maxX = 25;
-    public int minZ = -20;
-    public int maxZ = 20;
+    public int minX = -100;
+    public int maxX = 96;
+    public int minZ = -90;
+    public int maxZ = 82;
 
     //[Header("随机道具箱")]
     //public int maxboxNum;
