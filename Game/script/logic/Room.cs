@@ -15,7 +15,7 @@ public class Room {
 	//物品道具生成数
 	public int itemNum=200;
 	//道具生成种类
-	public int itemKind = 4;
+	public int itemKind = 8;
 
 	public enum Status {
 		PREPARE = 0,
@@ -228,11 +228,11 @@ public class Room {
 			if(player.camp == 1){ count1++; }
 			else { count2++; }
 		}
-        //每个队伍至少要有1名玩家
-        if (count1 < 1 || count2 < 1)
-        {
-            return false;
-        }
+        ////每个队伍至少要有1名玩家
+        //if (count1 < 1 || count2 < 1)
+        //{
+        //    return false;
+        //}
         return true;
 	}
 
