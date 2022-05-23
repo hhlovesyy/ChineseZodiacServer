@@ -158,6 +158,40 @@ public partial class MsgHandler {
 		room.Broadcast(msg);
 	}
 
+	public static void MsgWin(ClientState c, MsgBase msgBase)
+	{
+		MsgWin msg = (MsgWin)msgBase;
+		Player player = c.player;
+		if (player == null) return;
+
+		//room
+		Room room = RoomManager.GetRoom(player.roomId);
+		if (room == null)
+		{
+			return;
+		}
+		//status
+		if (room.status != Room.Status.FIGHT)
+		{
+			return;
+		}
+		//发送者校验
+		//if (player.id != msg.id)
+		//{
+		//	return;
+		//}
+		//状态
+
+		//广播
+		msg.id = player.id;
+		//room.Broadcast(msg);
+		//假设获胜了 但是其实没有
+		room.OneWin(msg.id);
+
+		//room.MakeOtherAnimalsLost(msg.id);
+
+	}
+
 }
 
 

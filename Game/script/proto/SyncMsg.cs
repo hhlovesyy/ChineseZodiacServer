@@ -62,3 +62,13 @@ public class MsgPickup:MsgBase
 	public MsgPickup() { protoName = "MsgPickup"; }
 	public int itemid; //似乎只要发送物品的id就可以
 }
+
+
+//同步胜利信息：谁胜利了
+public class MsgWin : MsgBase 
+{ 
+	public MsgWin() { protoName = "MsgWin"; } 
+	//服务端补充
+	public string id = ""; //哪个动物
+	
+}
